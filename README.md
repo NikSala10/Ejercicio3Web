@@ -1,0 +1,11 @@
+🎯 Objetivo
+
+1. Crear una aplicación de tareas (Todo App) en React que permita:
+
+2. Agregar nuevas tareas con un título y nivel de prioridad (baja, media, alta).
+
+3. Filtrar las tareas según su prioridad.
+
+4. Eliminar tareas cuando ya no sean necesarias.
+
+5. El resultado debe ser una app funcional, limpia y con un diseño atractivo pero sencillo
