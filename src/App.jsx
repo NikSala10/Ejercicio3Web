@@ -1,4 +1,5 @@
 import TodoTasks from "./components/Tasks/Tasks";
+import './App.css';
 
 export default function App() {
 

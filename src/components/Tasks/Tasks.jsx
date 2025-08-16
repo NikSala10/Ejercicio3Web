@@ -1,3 +1,4 @@
+import '../Tasks/Tasks.css';
 import { useState } from "react";
 
 export default function TodoTasks() {
@@ -25,7 +26,7 @@ export default function TodoTasks() {
 
   return (
     <>
-      <div>
+      <div className="todo-container">
         <label>Filtrar por prioridad: </label>
         <select onChange={(e) => setFilter(e.target.value) } value={filter}>
           <option value="all">Todas</option>
@@ -58,7 +59,7 @@ export default function TodoTasks() {
             <ul>
               {filteredTasks().map((task, index) => (
                 <li key={index}>
-                  {task.title} - <span style={{ color: task.priority === 'alta' ? 'red' : task.priority === 'media' ? 'orange' : 'green' }}>{task.priority}</span>
+                  {task.title} <span className={`priority-${task.priority}`}>{task.priority}</span>
                   <button onClick={() => handleDelete(index)}>Delete</button>
                 </li>
               ))}

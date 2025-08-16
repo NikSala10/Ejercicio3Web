@@ -1,0 +1,138 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1f29, #2c2f48);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Contenedor principal */
+.todo-container {
+  background: rgba(28, 28, 40, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  width: 450px;
+  margin-top: 50px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 1rem;
+}
+
+/* Fila para input + select + botón */
+.form-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.form-row input {
+  flex: 2;
+}
+
+.form-row select {
+  flex: 1;
+}
+
+.form-row button {
+  flex: 0.7;
+}
+
+/* Estilo general */
+input,
+select,
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background: #2f3046;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #6c63ff;
+}
+
+button {
+  background: #6c63ff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8b84ff;
+}
+
+/* Lista de tareas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #24253b;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); /* sombra de cada tarea */
+}
+
+/* Contenido interno alineado */
+li span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Prioridades alineadas */
+.priority-baja,
+.priority-media,
+.priority-alta {
+  display: inline-block;
+  min-width: 60px; /* asegura que todas tengan el mismo ancho */
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.priority-baja {
+  background: #4caf50;
+  color: white;
+}
+
+.priority-media {
+  background: #ff9800;
+  color: white;
+}
+
+.priority-alta {
+  background: #f44336;
+  color: white;
+}
+
+/* Botón eliminar */
+li button {
+  background: #ff4d6d;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: auto;
+}
+
+li button:hover {
+  background: #ff6b81;
+}
