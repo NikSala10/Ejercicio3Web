@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* Contenedor principal */
+
 .todo-container {
   background: rgba(28, 28, 40, 0.95);
   border-radius: 16px;
@@ -22,7 +22,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Fila para input + select + botón */
 .form-row {
   display: flex;
   gap: 8px;
@@ -41,7 +40,6 @@ body {
   flex: 0.7;
 }
 
-/* Estilo general */
 input,
 select,
 button {
@@ -70,7 +68,7 @@ button:hover {
   background: #8b84ff;
 }
 
-/* Lista de tareas */
+
 ul {
   list-style: none;
   padding: 0;
@@ -85,21 +83,20 @@ li {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); /* sombra de cada tarea */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3); 
 }
 
-/* Contenido interno alineado */
 li span {
   display: inline-flex;
   align-items: center;
 }
 
-/* Prioridades alineadas */
+
 .priority-baja,
 .priority-media,
 .priority-alta {
   display: inline-block;
-  min-width: 60px; /* asegura que todas tengan el mismo ancho */
+  min-width: 60px; 
   text-align: center;
   padding: 4px 8px;
   border-radius: 8px;
@@ -121,7 +118,6 @@ li span {
   color: white;
 }
 
-/* Botón eliminar */
 li button {
   background: #ff4d6d;
   border: none;
